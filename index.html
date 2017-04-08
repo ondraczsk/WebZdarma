@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+  <title>Ondrovy Webovky</title>
+
+  <!-- css -->
+  <!-- add material font (roboto) and material icon as needed -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- add material css | replace bootstrap.css -->
+  <link href="css/material.min.css" rel="stylesheet">
+  
+
+  <!-- additional css for documentation -->
+  <link href="https://v4-alpha.getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+  <link href="css/project.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar navbar-inverse toolbar-waterfall doc-navbar" id="doc_navbar">
+    <span class="navbar-brand">Ondrovy Webovky</span>&nbsp;  
+  <a data-toggle="modal" data-target="#logincommingsoon"" class="btn btn-outline-success" role="button" aria-pressed="true"><i class="material-icons">fingerprint</i>&nbsp;Login</a>
+
+  </div>
+
+
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" id="logincommingsoon" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+     <div class="modal-header">
+          <h2 class="modal-title">Login</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+        </div>
+        <div class="modal-body">  
+        
+                         			<form name="formular" onsubmit="return false">
+                 <!--  Heslo: <input type="password" size="10" name="heslo"><br>
+                 
+                      <input type="submit" value="Enter" onclick="window.location.href = '' + document.formular.heslo.value + '' ">   -->
+                      	<div class="form-group has-success">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<label for="ui_login_username">Uživatelské jméno</label>
+													<input class="form-control" id="ui_login_username" type="text" name="jmeno">
+												</div>
+											</div>
+										</div> 
+                      <div class="form-group form-group-label has-success">   
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<label for="ui_login_password">Heslo</label>
+													<input class="form-control" id="ui_login_password" type="password" name="heslo">
+												</div>
+											</div>    
+										</div>   
+                </form>
+                
+                	<a class="btn btn-flat waves-attach waves-effect" onclick="window.location.href = '' + document.formular.jmeno.value + document.formular.heslo.value + '' "><i class="material-icons">check</i>&nbsp;Přihlásit</a>
+        
+        
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="jumbotron jumbotron-fluid mb-xl doc-jumbotron" id="doc_index_jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-8 col-xl-6 offset-sm-1 offset-md-2 offset-xl-3">
+          <h1 class="typography-display-4">Ondrovy Webovky</h1>     <br>
+          <p class="font-weight-light typography-title">Máte-li zájem o vytvoření stránky <code>index.html</code> ZDARMA, tak jste tu správně!</p>
+         
+          <p>
+            <a class="btn btn-lg btn-secondary" data-toggle="modal" href="#doc_modal">Kontakt</a>
+     <!--      <a class="btn btn-lg bg-faded" href="gh-pages/components/cards/index.html">Documentation</a>           -->
+          </p>
+          <p class="mb-no text-white-hint typography-caption">Základem webu je Vzhled Material v4.0.0-alpha.6<br>(na základě Bootstrap v4.0.0-alpha.6)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="doc_modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Kontakt</h2>
+        </div>
+        <div class="modal-body">
+          <p>Máte-li zájem o stránku <code>index.html</code> kontaktujte mě na<br><i class="material-icons">email</i> ondrovywebstranky@gmail.com</p>
+          <h3 class="mt-lg typography-subheading">Více informací níže na stránce.</h3>
+         <!-- <p><a href="https://github.com/Daemonite/material/releases" target="_blank"><small class="align-text-top"><i class="material-icons">cloud_download</i></small> Download</a> Material's ready-to-use code to easily drop into any project. Includes compiled and minified versions of CSS and JS plugins.</p>
+          <h3 class="mt-lg typography-subheading">Package Managers</h3>
+          <p>Pull in Material's source files into nearly any project with some of the most popular package managers.</p>
+<pre class="p-md">
+<code>bower install daemonite-material#4.0.0-alpha.6</code>
+</pre>
+<pre class="p-md">
+<code>npm install daemonite-material@4.0.0-alpha.6</code>
+</pre>   -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="doc-main" id="doc_main">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-8 col-xl-6 offset-sm-1 offset-md-2 offset-xl-3">
+          <div class="mb-xl">
+            <h2 class="text-primary">Úvodem...</h2>
+            <p class="typography-subheading">Zde se dozvíš něco o mě a něco o tom jak dělám web. Ale taky se dozvíš co používám za věci abych vytvořil webovku na míru. <!--<a href="https://material.google.com/" target="_blank">Google Material Design<sup><i class="material-icons material-icons-inline">open_in_new</i></sup></a> with the front-end technology of the popular <a href="https://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap<sup><i class="material-icons material-icons-inline">open_in_new</i></sup></a> framework.--></p>
+          </div>
+       <!--class="font-weight-light text-muted"-->
+          <div class="blockquote mb-xl">
+           <!-- <p><a href="#webhosting">Webhosting za 20 Kč! (Nové)</a></p>    -->
+            <p><a href="#o_me">O mě</a></p>
+            <p><a href="#o_systemu">O programování</a></p>
+            <p><a href="#reference">Reference</a></p>
+    <p><a href="#reference">Kontakt</a></p>
+            
+          </div>
+
+
+              <!--
+                       <div class="mb-xl" id="webhosting">
+            <h3 class="text-primary">Webhosting</h3>
+            <div class="row">
+              <div class="col-md-6 mt-lg">
+                <h4 class="text-secondary typography-subheading">Jak to uděláme</h4>
+                <p>Nově nabízíme udělání webu + webhostingu od společnosti <a href="http://best-hosting.cz/" target="_blank">Best-Hosting.cz<sup><i class="material-icons material-icons-inline">open_in_new</i></sup></a> pouze za 19 Kč měsíčně!</p>
+                <p>Pokud máte zájem napište mi přes kontakt, a domluvíme se. Normální velikost webhostingu je NEOMEZENÁ! </p>
+              </div>
+              <div class="col-md-6 mt-lg">
+                <h4 class="text-secondary typography-subheading">Parametry</h4>
+                <p>Co dostanete? Neomezený prostor pro Vaše stránky, neomezený počet e-mailových schránek, neomezený přenos dat, dostupnost 99.99%, až 10 MySQL databází. Umožňuju i parking domény.</p>
+              </div>
+            </div>
+          </div>
+       <div class="bd-callout bd-callout-warning">
+<h4 id="conveying-meaning-to-assistive-technologies">Platební metody pro webhosting:</h4>  <br>
+     <li>Bezhotovostní převod </li>     <br>  <li>Platební kartou </li><br>  <li>PayPal </li><br>  <li>paysafecard </li><br><li>Premium SMS </li><br>  <li>Poštovní poukázka </li>
+<p></p>                                                                                                                                                                                      
+</div>     -->
+
+
+          <div class="mb-xl" id="o_me">
+            <h3 class="text-primary">O mě</h3>
+            <div class="row">
+              <div class="col-md-6 mt-lg">
+                <h4 class="text-secondary typography-subheading">Základní věci</h4>
+                <p>Jmenuji se Ondra Šmejkal a je mi 13 let. S webovkama jsem začal kolem 10 let a nejdřív jsem je jen zkoumal <i class="material-icons">insert_emoticon</i>. Ale kolem 11 sem začal programovat. Nejdřív jsem použil <a href="http://html5up.net/" target="_blank">Html5Up.net<sup><i class="material-icons material-icons-inline">open_in_new</i></sup></a> a potom jsem si stáhnul různé jiné vzhledy. A tak jsem začal <i class="material-icons">insert_emoticon</i>.  </p>
+              </div>
+              <div class="col-md-6 mt-lg">
+                <h4 class="text-secondary typography-subheading">Proč programuji</h4>
+                <p>Protože mě to baví! <i class="material-icons">mood</i></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-xl" id="o_systemu">
+            <h3 class="text-primary">O programování</h3>
+            <div class="row">
+              <div class="col-md-12 mt-lg">
+                <p>Používám počítač HP Compaq 6735s a monitor HP Compaq LA2306x. Programuji přes PSPad.</p>
+              </div>
+      
+            </div>
+          </div>
+
+          <div class="mb-xl" id="reference">
+            <h3 class="text-primary">Reference</h3> <br>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">     
+    <li data-slide-to="0" class="active"></li>
+    <li data-slide-to="1"></li>
+    <li data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+<p class="font-italic font-weight-light typography-title">Stránky jsou vysoce kvalitní, a přístup také!</p> <br>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<p class="font-weight-light typography-title">-Atlanthydia Games</p>
+    </div>
+    <div class="carousel-item">
+<p class="font-italic font-weight-light typography-title">Super, co víc můžu přát!</p> <br>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<p class="font-weight-light typography-title">-Centrum Elektroniky</p>
+    </div>
+    <div class="carousel-item">
+<p class="font-italic font-weight-light typography-title">Je to kvalita! Máme od něho web a šlape jako hodinky!</p> <br>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><p class="font-weight-light typography-title">-ClearSky</p>
+    </div>
+  </div>   <br>
+</div>
+       <!--     <div class="row">
+              <div class="col-md-4 mt-lg">
+                <h4 class="text-secondary typography-subheading">Near-term</h4>
+                <p>Bug fixes and updates alongside Bootstrap 4's continuous releases.</p>
+              </div>
+              <div class="col-md-4 mt-lg">
+                <h4 class="text-secondary typography-subheading">Mid-term</h4>
+                <p>Add missing support for some Google Material Design components (e.g. snackbars).</p>
+              </div>
+              <div class="col-md-4 mt-lg">
+                <h4 class="text-secondary typography-subheading">Long-term</h4>
+                <p>Rewrite all JavaScript plugins in ES6 to take advantage of the newest JavaScript enhancements.</p>
+              </div> 
+            </div>  -->  
+                <div class="mb-xl" id="kontakt">
+            <h3 class="text-primary">Kontakt</h3>
+            <div class="row">
+              <div class="col-md-12 mt-lg">
+                <p><i class="material-icons">info</i>  Máte-li zájem, napište mi a pokud chcete webhosting, tak se domluvíme.</p>
+                <p><i class="material-icons">email</i>        ondrovywebovky@gmail.com , ondrakraftak@gmail.com</p>
+                <p><i class="material-icons">subscriptions</i>        youtube.com/Centrum Elektroniky</p>
+                <p><i class="material-icons">public</i>        www.ondraweb.cz</p>
+              </div>
+      
+            </div>
+          </div>              
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <!-- add material js on top of bootstrap.js -->
+    <script src="js/material.min.js"></script>
+
+    <!-- additional js for documentation -->
+    <script src="js/project.min.js"></script>
+</body>
+</html>
