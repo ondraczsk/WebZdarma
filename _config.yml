@@ -44,3 +44,5 @@
     navbar:         doc_navbar
     navdrawer:      doc_navdrawer
   repo:             https://github.com/Daemonite/material
+
+theme: jekyll-theme-slate
